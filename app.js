@@ -33,6 +33,20 @@ app.use(
     whitelist: ["latitude", "longitude", "unit"],
   })
 );
+app.get("/", (req, res, next) => {
+  res.status(201).json({
+    data: {
+      message: "Welcome to the API",
+      instructions: "Use the following endpoints:",
+      endpoints: {
+        getAllSchools: "/api/v1/listSchools",
+        addSchool: "/api/v1/addSchool",
+      },
+      example:
+        "https://school-management-api-one.vercel.app/api/v1/listSchools",
+    },
+  });
+});
 
 app.use("/api/v1/addSchool", schoolRoute);
 app.use("/api/v1/listSchools", schoolListRoute1);

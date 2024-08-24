@@ -1,4 +1,4 @@
-# Project Title
+# School Management API
 
 This repository contains a Node.js API that allows users to add new schools to a MySQL database and retrieve a list of schools sorted by proximity to a given latitude and longitude.
 

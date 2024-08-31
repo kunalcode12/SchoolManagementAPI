@@ -119,7 +119,7 @@ To run this project, you will need to add the following environment variables to
 
 Local Development: http://localhost:3000
 
-Production: https://school-management-api-one.vercel.app
+Production: https://school-management-api-kepf.vercel.app
 
 ## Endpoints
 
@@ -136,7 +136,7 @@ Method:GET
 Description: Retrieves a list of all schools in the database.
 
 - **Example Request**
-  GET "https://school-management-api-one.vercel.app/api/v1/listSchools"
+  GET "https://school-management-api-kepf.vercel.app/api/v1/listSchools"
 
 - **Response**
 
@@ -167,7 +167,7 @@ Method:GET
 Description: Retrieves a list of all schools from the database in Sorted order according to user given latitude and longitude. And the unit is only valid in km or mi.
 
 - **Example Request**
-  GET "https://school-management-api-one.vercel.app/api/v1/listSchools/89.7767,120.5678/unit/km"
+  GET "https://school-management-api-kepf.vercel.app/api/v1/listSchools/89.7767,120.5678/unit/km"
 
 - **Response**
   ![App Screenshot](https://i.imgur.com/RjoUlbo.png)
@@ -176,7 +176,7 @@ Description: Retrieves a list of all schools from the database in Sorted order a
 
 - **INVALID Request Example**
 
-GET "https://school-management-api-one.vercel.app/api/v1/listSchools/95.7767,205.5678/unit/km"
+GET "https://school-management-api-kepf.vercel.app/api/v1/listSchools/95.7767,205.5678/unit/km"
 
 Latitude=95.7767(invalid)
 
@@ -196,7 +196,7 @@ Longitude=205.5678(invalid)
 Method:POST
 
 - **Example Request**
-  POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
+  POST "https://school-management-api-kepf.vercel.app/api/v1/addSchool"
 
 - **Request Body**
 
@@ -240,7 +240,7 @@ and it length should be greater then 5.
 
 **_For Invalid Name->_**
 
-POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
+POST "https://school-management-api-kepf.vercel.app/api/v1/addSchool"
 
 - **Request Body**
   ![App Screenshot](https://i.imgur.com/TdDkt20.png)
@@ -250,7 +250,7 @@ POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
 
 **_For Invalid Address->_**
 
-POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
+POST "https://school-management-api-kepf.vercel.app/api/v1/addSchool"
 
 - **Request Body**
   ![App Screenshot](https://i.imgur.com/SIWNDoW.png)
@@ -260,7 +260,7 @@ POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
 
 **_If School Already Exist in Database or Uploading the Same School Again->_**
 
-POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
+POST "https://school-management-api-kepf.vercel.app/api/v1/addSchool"
 
 - **Request Body**
   ![App Screenshot](https://i.imgur.com/lfZLLTL.png)
@@ -270,7 +270,7 @@ POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
 
 **_For Invalid Latitude And Longitude->_**
 
-POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
+POST "https://school-management-api-kepf.vercel.app/api/v1/addSchool"
 
 - **Request Body**
   ![App Screenshot](https://i.imgur.com/ebCFl9k.png)
@@ -283,5 +283,5 @@ POST "https://school-management-api-one.vercel.app/api/v1/addSchool"
 You can use below provided Postman link->
 
 ```http
-  https://www.postman.com/kunal01230321/workspace/api/collection/34883131-3044660c-3dd5-44e3-bdc0-ca0e27273f40?action=share&creator=34883131
+  https://www.postman.com/kunal01230321/workspace/api/collection/34883131-3044660c-3dd5-44e3-bdc0-ca0e27273f40
 ```
